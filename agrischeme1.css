@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/** navbar **/
+.navbar {
+    height: 60px;
+    background-color: #d1e0ff;
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-logo {
+    height: 50px;
+    width: 110px;
+}
+
+.logo {
+    background-image: url("/images/logo.png");
+    height: 52px;
+   
+    border-radius:10px;
+    width: 100%;
+    background-size: cover;
+}
+
+.add-first {
+    color: #cccccc;
+    font-size: 0.75rem;
+    font-weight: 100;
+}
+
+.nav-second {
+    font-size: 15px;
+}
+
+.add-icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-search {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+    margin-left: 25px;
+    width: 600px;
+    height: 40px;
+    padding: 10px 0px 10px 0px;
+    border-radius: 30px;
+}
+
+.nav-search:hover {
+    border: 2px solid #000000;
+}
+
+.search-select {
+    background-color: #f3f3f3;
+    height: 40px;
+    width: 120px;
+    padding: 0 0 0 10px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border: 2px solid #000000;
+    outline: none;
+}
+
+.search-input {
+    margin-left: 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 0.9rem;
+}
+
+.search-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    width: 60px;
+    height: 40px;
+    background-color: #000000;
+    color: white;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+span {
+    font-size: 0.75rem;
+}
+
+.nav-cart {
+    font-size: 0.7rem;
+}
+
+.nav-cart i {
+    font-size: 1.6rem;
+}
+
+/** bottom panel **/
+.bottom-panel {
+    height: 40px;
+    background-color: #222f3d;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.panel-options {
+    width: 70%;
+    font-size: 0.85rem;
+}
+
+.panel-options p {
+    display: inline;
+    margin-left: 10px;
+}
+
+/** hero sectrion **/
+.hero-section {
+    /* Header Image */
+    background-image: url('/Images/agri_hero_image.jpg');
+    width:auto;
+    background-size: cover;
+     height:230px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.text-overlay {
+    position: absolute;
+    top: 8%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    color: #090808e6;
+    font-size: 60px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds a shadow to the text for better readability */
+    text-align: left;
+}
+
+.hero-msg {
+    height: 40px;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    width: 90%;
+    margin-bottom: 25px;
+    border-radius: 30px;
+}
+
+.hero-msg a {
+    text-decoration: none;
+    color: #007185;
+}
+
+/** shop section **/
+
+
+h2 {
+    font-size: 25px;
+    background-color:  rgb(211, 234, 143);
+}
+
+ 
+
+
+
+
+
+
+
+
+/** footer **/
+.foot-panel1 {
+    background-color: #37475a;
+    height: 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+
+.foot-panel2 {
+    background-color: #222f3d;
+    color: white;
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul {
+    margin-top: 30px;
+}
+
+ul li,
+li a {
+    display: block;
+    text-decoration: none;
+    list-style: none;
+}
+
+li a {
+    font-size: 0.85rem;
+    margin-top: 10px;
+    color: #dddddd;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+.foot-panel3 {
+    border-top: 0.5px solid gray;
+    height: 70px;
+    background-color: #bbd9ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foot-panel3 .logo {
+    background-image: "https://upload.wikimedia.org/wikipedia/commons/8/84/Government_of_India_logo.svg";
+    background-size: cover;
+    height: 50px;
+    width: 100px;
+}
+
+
+
+.pages a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.7rem;
+    margin-left: 5px;
+}
+
+.pages a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    margin-top: 5px;
+    font-size: 0.8rem;
+}
