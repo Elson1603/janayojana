@@ -23,7 +23,7 @@
 }
 
 .logo {
-    background-image: url("/images/logo.png");
+    background-image: url("logo.png");
     height: 52px;
    
     border-radius:10px;
@@ -130,7 +130,7 @@ span {
 /** hero sectrion **/
 .hero-section {
     /* Header Image */
-    background-image: url('/Images/agri_hero_image.jpg');
+    background-image: url('agri_hero_image.jpg');
     width:auto;
     background-size: cover;
      height:230px;
