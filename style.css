@@ -7,6 +7,22 @@
     box-sizing: border-box;
 }
 
+@media (max-width: 768px) {
+  /* Styles for tablets and small devices */
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Styles for mobile phones */
+  .container {
+    font-size: 14px;
+    padding: 5px;
+  }
+}
+
 /** navbar **/
 .navbar {
     height: 60px;
@@ -23,7 +39,7 @@
 }
 
 .logo {
-    background-image: url("/images/logo.png");
+    background-image: url("logo.png");
     height: 57px;
     margin-top: 2px;
     border-radius:10px;
@@ -130,7 +146,7 @@ span {
 /** hero sectrion **/
 .hero-section {
     /* Header Image */
-    background-image: url('/Images/hero_image.jpg');
+    background-image: url('hero_image.jpg');
     width:100%;
     background-size: cover;
     height: 350px;
