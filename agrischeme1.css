@@ -25,8 +25,7 @@
 .logo {
     background-image: url("logo.png");
     height: 52px;
-   
-    border-radius:10px;
+    border-radius: 10px;
     width: 100%;
     background-size: cover;
 }
@@ -127,17 +126,18 @@ span {
     margin-left: 10px;
 }
 
-/** hero sectrion **/
+/** hero section **/
 .hero-section {
     /* Header Image */
     background-image: url('agri_hero_image.jpg');
-    width:auto;
+    width: auto;
     background-size: cover;
-     height:230px;
+    height: 230px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
 }
+
 .text-overlay {
     position: absolute;
     top: 8%;
@@ -169,21 +169,10 @@ span {
 }
 
 /** shop section **/
-
-
 h2 {
     font-size: 25px;
-    background-color:  rgb(211, 234, 143);
+    background-color: rgb(211, 234, 143);
 }
-
- 
-
-
-
-
-
-
-
 
 /** footer **/
 .foot-panel1 {
@@ -195,7 +184,6 @@ h2 {
     justify-content: center;
     font-size: 20px;
 }
-
 
 .foot-panel2 {
     background-color: #222f3d;
@@ -236,13 +224,11 @@ li a:hover {
 }
 
 .foot-panel3 .logo {
-    background-image: "https://upload.wikimedia.org/wikipedia/commons/8/84/Government_of_India_logo.svg";
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/8/84/Government_of_India_logo.svg");
     background-size: cover;
     height: 50px;
     width: 100px;
 }
-
-
 
 .pages a {
     text-decoration: none;
@@ -258,4 +244,73 @@ li a:hover {
 .copyright {
     margin-top: 5px;
     font-size: 0.8rem;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+    .navbar {
+        height: 60px;
+    }
+    .nav-search {
+        width: 600px;
+        height: 40px;
+    }
+    .hero-section {
+        height: 230px;
+    }
+    .foot-panel2 {
+        height: 400px;
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .navbar {
+        height: 55px;
+        padding: 0 20px;
+    }
+    .nav-search {
+        width: 500px;
+        height: 35px;
+    }
+    .hero-section {
+        height: 200px;
+    }
+    .foot-panel2 {
+        height: 350px;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+    .nav-logo {
+        height: 40px;
+        width: 80px;
+        margin-bottom: 10px;
+    }
+    .nav-search {
+        width: 90%;
+        height: 35px;
+        margin-left: 0;
+    }
+    .hero-section {
+        height: 180px;
+        background-size: contain;
+    }
+    .hero-msg {
+        width: 100%;
+        font-size: 0.75rem;
+    }
+    .foot-panel2 {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
 }
