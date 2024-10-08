@@ -7,20 +7,89 @@
     box-sizing: border-box;
 }
 
-@media (max-width: 768px) {
-  /* Styles for tablets and small devices */
-  .container {
+/* Global Styles */
+.container {
     width: 100%;
     padding: 10px;
-  }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    /* Styles for tablets and small devices */
+    .container {
+        padding: 10px;
+    }
+
+    .navbar {
+        flex-direction: column; /* Stack navbar items vertically */
+        height: auto; /* Allow height to adjust */
+    }
+
+    .nav-search {
+        width: 90%; /* Make the search bar wider on mobile */
+        margin-left: 0; /* Remove margin */
+    }
+
+    .shop-section {
+        flex-direction: column; /* Stack boxes vertically */
+        align-items: center; /* Center items */
+    }
+
+    .box {
+        width: 90%; /* Make boxes full width on mobile */
+        margin: 10px 0; /* Add some vertical spacing */
+    }
+
+    .hero-msg {
+        font-size: 0.75rem; /* Smaller font size for mobile */
+        width: 100%; /* Full width */
+        margin-bottom: 10px; /* Reduce bottom margin */
+    }
+
+    .foot-panel2 {
+        flex-direction: column; /* Stack footer sections vertically */
+        align-items: center; /* Center items */
+    }
+
+    .foot-panel3 {
+        flex-direction: column; /* Stack footer logo and links vertically */
+        align-items: center; /* Center items */
+    }
 }
 
 @media (max-width: 480px) {
-  /* Styles for mobile phones */
-  .container {
-    font-size: 14px;
-    padding: 5px;
-  }
+    /* Styles for mobile phones */
+    .container {
+        font-size: 14px; /* Adjust font size for mobile */
+        padding: 5px; /* Reduce padding */
+    }
+
+    .navbar {
+        height: auto; /* Adjust navbar height */
+    }
+
+    .nav-logo {
+        height: 50px; /* Adjust logo size for mobile */
+        width: auto; /* Auto width for logo */
+    }
+
+    .shop-section {
+        flex-direction: column; /* Ensure shop section stacks vertically */
+        padding: 0; /* Remove padding */
+    }
+
+    .box {
+        width: 95%; /* Full width of the box */
+        margin: 5px 0; /* Reduce margin */
+    }
+
+    .box-img {
+        height: 200px; /* Adjust box image size */
+    }
+
+    .footer {
+        padding: 10px; /* Adjust footer padding */
+    }
 }
 
 /** navbar **/
@@ -42,7 +111,7 @@
     background-image: url("logo.png");
     height: 57px;
     margin-top: 2px;
-    border-radius:10px;
+    border-radius: 10px;
     width: 100%;
     background-size: cover;
 }
@@ -71,7 +140,7 @@
     margin-left: 25px;
     width: 600px;
     height: 40px;
-    padding: 10px 0px 10px 0px;
+    padding: 10px 0;
     border-radius: 30px;
 }
 
@@ -143,11 +212,10 @@ span {
     margin-left: 10px;
 }
 
-/** hero sectrion **/
+/** hero section **/
 .hero-section {
-    /* Header Image */
     background-image: url('hero_image.jpg');
-    width:100%;
+    width: 100%;
     background-size: cover;
     height: 350px;
     display: flex;
@@ -187,7 +255,7 @@ span {
     height: 410px;
     width: 23%;
     background-color: white;
-    padding: 15px 0px 15px;
+    padding: 15px 0;
     margin-top: 25px;
 }
 
@@ -231,13 +299,11 @@ h2 {
     display: flex;
     justify-content: space-evenly;
     text-decoration: none;
-    
 }
-br{
-  line-height: 0.5px;
-}
-  
 
+br {
+    line-height: 0.5px;
+}
 
 ul {
     margin-top: 30px;
@@ -270,13 +336,11 @@ li a:hover {
 }
 
 .foot-panel3 .logo {
-    background-image: "https://upload.wikimedia.org/wikipedia/commons/8/84/Government_of_India_logo.svg";
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/8/84/Government_of_India_logo.svg");
     background-size: cover;
     height: 50px;
     width: 100px;
 }
-
-
 
 .pages a {
     text-decoration: none;
